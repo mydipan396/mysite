@@ -17,3 +17,13 @@ def login(request):
          else:
              error_msg = "用户名或密码错误"
     return render(request, "login.html", {'error_msg':error_msg})
+
+def index(request):
+	# file_object = open('common.css')
+	# fileText = ""
+	# try:
+	#     fileText = file_object.read()
+	# finally:
+	#     file_object.close()
+	# print(fileText)
+    return render(request, "index.html")
